@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Material Icons Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" />
+
+    <!-- flowbite cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Jersey+25&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+20+Charted&family=Jersey+25&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+20+Charted&family=Jersey+25&display=swap"
+        rel="stylesheet">
+
+    <title>WWE | Universe</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-bg py-2 bg-opacity-50 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center ml-6">
+
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center image-cover">
+                    <img src="./img/logo.png" alt="Logo" class="h-12 mr-2"> <!-- Adjust h-8 to your desired height -->
+                    <!-- <span class="text-white font-bold text-xl">Universe</span> -->
+                    <span
+                        class="text-4xl font-bold bg-gradient-to-r from-red-500 to-zinc-800 bg-clip-text text-transparent"
+                        id="logo-heading">Universe</span>
+
+                </a>
+
+                <!-- Navbar links (toggleable on small screens) -->
+                <div id="navbar-links" class="hidden md:flex flex-grow justify-start ml-36 font-sans font-bold">
+                    <ul class="nav-links flex">
+                        <a href="#" class="text-gray-300 hover:text-red-700 px-4">WWE NETWORK</a>
+                        <a href="#" class="text-gray-300 hover:text-red-700 px-4">SHOWS</a>
+                        <a href="#" class="text-gray-300 hover:text-red-700 px-4">SUPERSTARS</a>
+                        <a href="#" class="text-gray-300 hover:text-red-700 px-4">SHOP</a>
+                    </ul>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex space-x-4 hidden md:flex mr-4">
+                    <button
+                        class="btn-text align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 bg-gradient-to-tr from-red-600 to-red-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] rounded-full"
+                        type="button" onclick="goToPage()">
+                        Log In
+                    </button>
+                    <button
+                        class="btn-text align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 border border-gray-200 text-gray-100 hover:opacity-75 focus:rin focus:ring-gray- active:opacity-[0.85] rounded-full"
+                        type="button">
+                        Downloads
+                    </button>
+                </div>
+
+                <!-- Hamburger icon (visible on small screens) -->
+                <div class="md:hidden">
+                    <button id="hamburger-btn" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr class="border border-black border-double">
+
+    <!-- Jumbotron Card  -->
+
+    <div class="body-class">
+
+        <section
+            class="bg-cover bg-no-repeat bg-[url('https://cdn.segmentnextimages.com/wp-content/uploads/2023/03/WWE-2K23-feature.jpg')] bg-gray-700 bg-blend-multiply">
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                <h1 class="mb-4 text-6xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+                    id="jumbotron-head">
+                    WWE 2K23</h1>
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+                    id="jumbotron-head">
+                    <span class="text-red-700">EVEN</span> STRONGER, The "JOHN <span class="text-red-700">CENA</span>"
+                    Edition.
+                </h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48" id="jumbotron-head">
+                    Releive the moment of
+                    greatness, the Champ is here.</p>
+                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                    <a href="#"
+                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:rin-blue-300 dark:focus:rin-blue-900">
+                        Pre-order Now
+                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border border-black border-2 border-dashed">
+
+        <!-- Profile Card -->
+
+        <div id="gallery-title">
+            <h1 class="text-white text-center text-6xl font-medium mt-12">Top #3 Superstars</h1>
+        </div>
+
+        <div class="flex grid-flow-row justify-center mx-auto mt-10 mb-8">
+
+            <div
+                class="relative flex flex-col text-gray-700 bg-slate-950 shadow-md bg-clip-border rounded-xl w-96 mx-8">
+                <div
+                    class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-slate-900 shadow-lg bg-clip-border rounded-xl h-80">
+                    <img src="https://www.usanetwork.com/sites/usablog/files/styles/scale_862/public/2022/06/john-cena-month2.jpg"
+                        alt="profile-picture" />
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+                        id="johncena-title">
+                        #1 John Cena
+                    </h4>
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400"
+                        id="subtitle">
+                        WWE Wrestler
+                    </p>
+                </div>
+                <div class="flex justify-center p-6 pt-2 gap-7">
+                    <a href="#facebook"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#twitter"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400">
+                        <i class="fab fa-twitter" aria-hidden="true">
+                        </i>
+                    </a>
+                    <a href="#instagram"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-pink-600 to-pink-400"><i
+                            class="fab fa-instagram" aria-hidden="true">
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div
+                class="relative flex flex-col text-gray-700 bg-slate-950 shadow-md bg-clip-border rounded-xl w-96 mx-8">
+                <div
+                    class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-slate-900 shadow-lg bg-clip-border rounded-xl h-80">
+                    <img src="https://www.usanetwork.com/sites/usablog/files/2022/09/wwe-roman-reigns-titles.jpg"
+                        alt="profile-picture" />
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+                        id="romanreigns-title">
+                        #2 Roman Reigns
+                    </h4>
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400"
+                        id="subtitle">
+                        WWE Wrestler
+                    </p>
+                </div>
+                <div class="flex justify-center p-6 pt-2 gap-7">
+                    <a href="#facebook"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#twitter"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400">
+                        <i class="fab fa-twitter" aria-hidden="true">
+                        </i>
+                    </a>
+                    <a href="#instagram"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-pink-600 to-pink-400"><i
+                            class="fab fa-instagram" aria-hidden="true">
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div
+                class="relative flex flex-col text-gray-700 bg-slate-950 shadow-md bg-clip-border rounded-xl w-96 mx-8">
+                <div
+                    class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-slate-900 shadow-lg bg-clip-border rounded-xl h-80">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/west-region-premiere-nfls-victor-cruz-and-stuntwoman-jessie-news-photo-1638222180.jpg"
+                        alt="profile-picture" />
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+                        id="therock-title">
+                        #3 The Rock "Dwayne Johnson"
+                    </h4>
+                    <p class="block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400"
+                        id="subtitle">
+                        WWE Wrestler
+                    </p>
+                </div>
+                <div class="flex justify-center p-6 pt-2 gap-7">
+                    <a href="#facebook"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#twitter"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400">
+                        <i class="fab fa-twitter" aria-hidden="true">
+                        </i>
+                    </a>
+                    <a href="#instagram"
+                        class="block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-pink-600 to-pink-400"><i
+                            class="fab fa-instagram" aria-hidden="true">
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Carousel  -->
+
+        <div class="mt-8 mb-8 bg-slate-950">
+
+            <div class="absolute ml-[42%] py-32">
+                <span class="text-white text-6xl font-bold bg-gradient-to-r from-red-800 to-red-700"
+                    id="carousel-title">WWE
+                    Greatest of all time Superstars.</span>
+                <p class="text-white text-2xl ml-36 mt-2" id="carousel-title">"Moment when superstars shocked the WWE
+                    Universe!"</p>
+            </div>
+
+
+            <div id="default-carousel" class="relative w-[524px] mx-10" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-l md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.wwe.com/f/styles/gallery_img_l/public/photo/image/2015/03/WM31_Photo_390-2986202294.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.wwe.com/f/styles/gallery_img_l/public/all/2017/06/170_Belfast_04182013jg_1302--78cfc4fa9c7b810c55fd0b019ec37397.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.wwe.com/f/styles/gallery_img_l/public/all/2023/05/041_London_04292022_AT_4539--c1f449b285d246c943576cc1dc35cd49.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.wwe.com/f/styles/wwe_16_9_xl_r/public/2016/02/20160129_WrestleMania_31_Episode_CM--f5c72c679ac78ac0737640237712a13a.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.wwe.com/f/styles/gallery_img_l/public/all/2020/07/021_RAW_09092013ej_1376--027943a0814c8d3aa2827ace96acede2.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div> -->
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+
+        </div>
+
+        <!-- Gallery  -->
+
+        <section class="text-gray-600 body-font bg-slate-950 mt-20">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                <div class="flex w-full mb-20 flex-wrap ml-6">
+                    <h1 class="sm:text-5xl text-2xl font-medium title-font text-red-600 lg:w-1/3 lg:mb-0 mb-4"
+                        id="gallery-title">#The Showdown ERA</h1>
+                    <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-xl text-white" id="gallery-para">Entering
+                        into the WWE Universe with exciting
+                        glorious purpose in history making, blast from the past! Tag your #ShowdownSuperstar on X now.
+                    </p>
+                </div>
+                <div class="flex flex-wrap md:-m-2 -m-1">
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                src="https://wallpapercave.com/wp/wp2356048.jpg">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                src="https://www.ewrestlingnews.com/wp-content/uploads/2021/01/rko-1068x801.jpg">
+                        </div>
+                        <div class="md:p-2 p-1 w-full">
+                            <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                src="https://cdn.2kgames.com/2022/01/20/61e8b728a09d5tri3641_yrggn91_w22_key.jpg">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-full">
+                            <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                src="https://fanatical.imgix.net/product/original/1f784d0f-3025-4eaa-8c6f-cf0547d7e2d8.jpeg?auto=compress">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                src="https://d.ibtimes.com/en/full/3272869/roman-reigns.jpg">
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                src="https://i.pinimg.com/originals/32/5d/67/325d6791376e738c8b2aa660f7b9b336.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="w-full p-8 bg-slate-950 mt-24">
+            <div
+                class="flex flex-row flex-wrap items-center justify-center text-center bg-slate-950 gap-y-6 gap-x-12 md:justify-between">
+                <a href="#" class="flex items-center image-cover">
+                    <img src="./img/logo.png" alt="Logo" class="h-12 mr-2"> <!-- Adjust h-8 to your desired height -->
+                    <!-- <span class="text-white font-bold text-xl">Universe</span> -->
+                    <span
+                        class="text-4xl font-bold bg-gradient-to-r from-red-500 to-zinc-800 bg-clip-text text-transparent"
+                        id="footer-logo">Universe</span>
+
+                </a>
+                <ul class="flex flex-wrap items-center gap-y-2 gap-x-8">
+                    <li>
+                        <a href="#"
+                            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-white hover:text-blue-500 focus:text-blue-500"
+                            id="footer">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-white hover:text-blue-500 focus:text-blue-500"
+                            id="footer">
+                            License
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-white hover:text-blue-500 focus:text-blue-500"
+                            id="footer">
+                            Contribute
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-white hover:text-blue-500 focus:text-blue-500"
+                            id="footer">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="block my-8 border-t border-blue-gray-50" />
+            <p class="block font-sans text-base antialiased font-normal leading-relaxed text-center text-white"
+                id="footer">
+                © 2024 WWE Universe - by Satyajeet
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const navbarLinks = document.getElementById('navbar-links');
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navbarLinks.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        function goToPage() {
+            window.location.href = "signup.html"; // Replace "page2.html" with the path to your HTML page
+        }
+    </script>
+
+
+
+
+
+    <!-- script -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
+    <!-- from node_modules -->
+    <script src="node_modules/@material-tailwind/html@latest/scripts/ripple.js"></script>
+
+    <!-- from cdn -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+
+    <!-- script from flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
